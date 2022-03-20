@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="bday.css">
+    <script src="https://kit.fontawesome.com/6ef4183424.js" crossorigin="anonymous"></script>
+
+</head>
+<body class = "all_home">
+    <div id = "navbar_all">
+        <nav class = "navbar">
+            <a href="bday.html" id = "logo"><i class="fa-solid fa-cake-candles"></i>Happy Birthday!</a>
+            <ul class="navbar_menu">
+                <li class = "navbar_contents">
+                    <a href="About.html" class="navbar_links">About</a>
+                </li>
+                <li class = "navbar_contents">
+                    <a href="History.html" class="navbar_links">History</a>
+                </li>
+                <li class = "navbar_contents">
+                    <a href="End.html" class="navbar_links">End</a>
+                </li>
+                <li class = "navbar_contents">
+                    <a href="bday.html" class="navbar_links"><i id = "fa-house" class="fa-solid fa-house"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+    <!-- Contents -->
+    
+    <div class = "bday_content">
+       <div></div>
+        <h1 class = "header" id = "hbd">Happy Birthday Karina!</h1>
+        <h2 class = "header" id = "wish"><i class="fa-solid fa-grip-lines" id = "lines"></i>I Wish you the Best of Luck!<i id = "lines" class="fa-solid fa-grip-lines"></i></h2>
+    </div>
+
+    <div>
+        <script>
+             document.addEventListener('mousemove', function(e){
+                var body = document.querySelector('body');
+                var balloon = document.createElement("span");
+                var x = e.offsetX;
+                var y = e.offsetY;
+                balloon.style.left = x + 'px';
+                balloon.style.top = y + 'px';
+                var size = Math.random() * 100;
+                balloon.style.width = 10+ size + "px";
+                balloon.style.height = 10+ size + "px";
+                body.appendChild(balloon);
+            })
+
+            setTimeout(function(){
+                balloon.remove();
+            }, 1500);
+       
+        </script>
+    </div>
+
+</body>
+</html>

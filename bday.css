@@ -1,0 +1,402 @@
+/* Home Page */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.all_home {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/002/374/828/non_2x/happy-birthday-and-party-background-free-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+span {
+  position: absolute;
+  background: url(R.png);
+  pointer-events: none;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -1000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+#navbar_all {
+  background-color: #5a93bc;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#logo {
+  color: #d7f8ea;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.fa-solid {
+  margin-right: 0.7rem;
+  margin-top: -10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar_contents {
+  height: 80px;
+  font-size: 23px;
+}
+.navbar_links {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  height: 100%;
+}
+
+#fa-house {
+  margin-top: 0.5px;
+  margin-right: -50px;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+}
+
+.navbar_links:hover {
+  color: #aaf0d1;
+  transition: all 0.3s ease;
+}
+
+.bday_content {
+  border: solid #f88c8c;
+  border-width: 5px;
+  height: 10 em;
+  position: relative;
+  margin: 0em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: #3b968a;
+  padding: 20px;
+}
+
+.header {
+  padding: 0.5rem 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+#hbd {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+}
+
+#wish {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+#lines {
+  height: 15px;
+  padding-left: 10px;
+}
+
+/* About Page */
+
+#navbar_about {
+  background-color: transparent;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: "Roboto", sans-serif;
+}
+
+.all_about {
+  background-image: url(https://www.schoolsobservatory.org/sites/default/files/stars1.jpg);
+  background-size: cover;
+}
+
+.ct {
+  background-color: white;
+  box-shadow: 10px 10px 10px #5a93bc;
+  border-width: 5px;
+  height: 10 em;
+  position: relative;
+  margin: 0em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: #3b968a;
+  padding: 30px;
+  opacity: 70%;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap");
+
+#about_us {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 35px;
+  color: #444444;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+#paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #444444;
+}
+
+.contents {
+  color: black;
+  padding-bottom: 10px;
+}
+
+/* History Page */
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
+
+#navbar_all_history {
+  background-color: #5a93bc;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar_history {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#logo_history {
+  color: #d7f8ea;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.fa-solid {
+  margin-right: 0.7rem;
+  margin-top: -10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_menu_history {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar_contents_history {
+  height: 80px;
+  font-size: 23px;
+}
+.navbar_links_history {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  height: 100%;
+}
+
+#fa-house {
+  margin-top: 0.5px;
+  margin-right: -50px;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+}
+
+.navbar_links_history:hover {
+  color: #aaf0d1;
+  transition: all 0.3s ease;
+}
+
+.all_history {
+  font-family: "Fredoka", sans-serif;
+  height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 90.35vh;
+}
+
+.left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.left-slide > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 50px;
+}
+
+.left-slide h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  margin-top: -30px;
+}
+
+.left-slide p {
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.container .action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* End Page */
